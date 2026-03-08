@@ -1,0 +1,18 @@
+{
+  "resources": [
+    {
+      "name": "Library",
+      "type": "study",
+      "location": "Corpul E",
+      "program": "08:00 - 20:00",
+      "tags": ["study", "quiet", "books"]
+    },
+    {
+      "name": "Cafeteria",
+      "type": "food",
+      "location": "Corpul D",
+      "program": "11:00 - 15:00",
+      "tags": ["food", "cheap", "lunch"]
+    }
+  ]
+}
