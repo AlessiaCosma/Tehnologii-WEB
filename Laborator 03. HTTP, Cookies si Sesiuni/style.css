@@ -1,0 +1,191 @@
+body.light {
+    background-color: white;
+    color: black;
+}
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.light a {
+    color: #5a5af0;
+}
+
+.light a:hover {
+    color: #3b3bbf;
+}
+
+.light nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+}
+.dark nav {
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #444;
+     height: 30px
+}
+
+.dark a {
+    color: #9aa0ff;
+}
+
+.dark a:hover {
+    color: #c2c6ff;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    height: 60px; 
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#register{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+#register input{
+    width: 100%;
+    box-sizing: border-box;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 345px;
+    padding-top: 150px;
+    
+}
+#login input[type="text"],
+#login input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#login input[type="checkbox"] {
+    width: auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #5650f7;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2a00b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #5650f7;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #a28dff;
+}
+
+
+body.light table th {
+    background-color: #5650f7;
+    color: #fff;
+}
+
+body.light tr:hover {
+    background-color: #c7cbf9;
+}
+
+body.dark table th {
+    background-color: #5650f7;
+    color: #fff;
+}
+
+body.dark tr:hover {
+    background-color: #333;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.alert-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #a71d2a;
+}

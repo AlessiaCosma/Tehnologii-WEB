@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vizualizare</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/cookies.js"></script>
+        <script src="./js/storage.js"></script>
+        <script src="./js/cookies-info.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="preferences.html">Setari Preferinte</a></li>
+                    <li><a href="index.html">Pagina principala</a></li>
+                    <li><a href="login.html">Autentificare</a></li>
+                </ul>
+            </nav>
+            <h1>Informatii Cookies si Storage</h1>
+
+            <section>
+                <h2>Cookies</h2>
+                <p id="cookies-raw"></p>
+                <table id="cookies-table" border="1">
+                    <tr>
+                        <th>Nume</th>
+                        <th>Valoare</th>
+                        <th>Lungime</th>
+                        <th>Actiune</th>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Local Storage</h2>
+                <pre id="local-json"></pre>
+                <table id="local-table" border="1">
+                    <tr>
+                        <th>Cheie</th>
+                        <th>Valoare</th>
+                        <th>Dimensiune</th>
+                        <th>Actiune</th>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Session Storage</h2>
+                <pre id="session-json"></pre>
+                <table id="session-table" border="1">
+                    <tr>
+                        <th>Cheie</th>
+                        <th>Valoare</th>
+                        <th>Dimensiune</th>
+                        <th>Actiune</th>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Comparativ</h2>
+                <table border="1">
+                    <tr>
+                        <th>Tip</th>
+                        <th>Capacitate</th>
+                        <th>Expirare</th>
+                        <th>Trimis la server?</th>
+                        <th>Accesibil din?</th>
+                    </tr>
+                    <tr>
+                        <td>Cookies</td>
+                        <td>~4KB per cookie</td>
+                        <td>Stabilita de cookie</td>
+                        <td>Da</td>
+                        <td>JavaScript + Server</td>
+                    </tr>
+                    <tr>
+                        <td>Local Storage</td>
+                        <td>~5-10MB</td>
+                        <td>Persistent</td>
+                        <td>Nu</td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Session Storage</td>
+                        <td>~5-10MB</td>
+                        <td>Tab/session</td>
+                        <td>Nu</td>
+                        <td>JavaScript</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

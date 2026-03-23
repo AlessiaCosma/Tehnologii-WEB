@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cos de Cumparaturi</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/storage.js"></script>
+        <script src="./js/cart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cos de Cumparaturi</h1>
+
+            <form id="add-form">
+                <label>Produs:
+                    <select id="product">
+                        <option value="laptop">Laptop</option>
+                        <option value="telefon">Telefon</option>
+                        <option value="tableta">Tableta</option>
+                        <option value="casti">Casti</option>
+                    </select>
+                </label>
+                <label>Cantitate:
+                    <input type="number" id="quantity" min="1" max="10" value="1">
+                </label>
+                <button type="submit">Adauga in Cos</button>
+            </form>
+
+            <h3>Produse in cos</h3>
+            <table id="cart-table" border="1">
+                <tr>
+                    <th>Produs</th>
+                    <th>Cantitate</th>
+                    <th>Pret</th>
+                    <th>Actiune</th>
+                </tr>
+            </table>
+            <p>Total: <span id="total">0</span> lei</p>
+            <button id="clear-cart">Goleste Cosul</button>
+        </div>
+    </body>
+</html>

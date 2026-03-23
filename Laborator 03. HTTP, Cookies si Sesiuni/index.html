@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagina principala</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/cookies.js" ></script>
+        <script src="./js/storage.js" ></script>
+        <script src="./js/main.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="preferences.html">Setari Preferinte</a></li>
+                    <li><a href="cookies-info.html">Vizualizare</a></li>
+                    <li><a href="login.html">Autentificare</a></li>
+                </ul>
+            </nav>
+            <h1 id="welcome">Bun venit, Vizitator!</h1>
+            <h2 id="visits">Aceasta este vizita ta numarul 0.</h2>
+            <h3>Cookies</h3>
+            <table id="cookies-table" border="1">
+                <tr>
+                    <th>Nume</th>
+                    <th>Valoare</th>
+                </tr>
+            </table>
+            <h3>Local Storage</h3>
+            <table id="local-table" border="1">
+                <tr>
+                    <th>Cheie</th>
+                    <th>Valoare</th>
+                </tr>
+            </table>
+            <h3>Session Storage</h3>
+            <table id="session-table" border="1">
+                <tr>
+                    <th>Cheie</th>
+                    <th>Valoare</th>
+                </tr>
+            </table>
+            <button id="delete-all">Sterge Tot</button>
+        </div>
+    </body>
+
+</html>

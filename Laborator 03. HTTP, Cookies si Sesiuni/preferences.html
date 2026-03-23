@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Setari preferinte</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/cookies.js"></script>
+        <script src="./js/storage.js"></script>
+        <script src="./js/preferences.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Pagina principala</a></li>
+                    <li><a href="cookies-info.html">Vizualizare</a></li>
+                    <li><a href="login.html">Autentificare</a></li>
+                </ul>
+            </nav>
+            <h1>Preferinte Utilizator</h1>
+
+            <form id="preferences-form">
+                <label>
+                    Nume utilizator:
+                    <input type="text" id="username" name="username">
+                </label>
+                <br><br>
+
+                <label>
+                    Tema:
+                    <select id="theme" name="theme">
+                        <option value="light">Luminos</option>
+                        <option value="dark">Intunecat</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <label>
+                    Limba:
+                    <select id="language" name="language">
+                        <option value="ro">Romana</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <label>
+                    Dimensiune font:
+                    <select id="font-size" name="font-size">
+                        <option value="14px">14px</option>
+                        <option value="16px">16px</option>
+                        <option value="18px">18px</option>
+                        <option value="20px">20px</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <button type="submit">Salvează Preferinte</button>
+            </form>
+
+            <p id="success-message" style="display: none;">Preferintele au fost salvate!</p>
+        </div>
+    </body>
+</html>

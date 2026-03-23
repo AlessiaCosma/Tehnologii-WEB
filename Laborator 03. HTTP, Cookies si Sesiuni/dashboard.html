@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>    
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/storage.js"></script>
+        <script src="./js/dashboard.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dashboard</h1>
+            <p>ID Sesiune: <span id="session-id"></span></p>
+            <p>Username: <span id="username"></span></p>
+            <p>Email: <span id="email"></span></p>
+            <p>Ora autentificării: <span id="login-time"></span></p>
+            <p>Durata sesiunii: <span id="session-duration"></span></p>
+
+            <h3>SessionStorage (debug)</h3>
+            <pre id="session-data"></pre>
+
+            <button id="logout">Deconectare</button>
+            <a href="cart.html" target="_blank" id="open-cart-link">Acceseaza Cosul de Cumparaturi</a>
+        </div>
+    </body>
+</html>

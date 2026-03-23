@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Autentificare</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./js/storage.js"></script>
+        <script src="./js/login.js"></script>
+    </head>
+    <body>
+        <div class="container" id="login">
+            <h1>Autentificare</h1>
+            <form id="login-form" >
+                <label>Username: <input type="text" id="username" required></label><br>
+                <label>Parola: <input type="password" id="password" required></label><br>
+                <label><input type="checkbox" id="remember"> Tine-ma minte</label><br>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-msg"></p>
+            <p>Nu ai cont? <a href="register.html">Inregistreaza-te</a></p>
+        </div>
+    </body>
+</html>
